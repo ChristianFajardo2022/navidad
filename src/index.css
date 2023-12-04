@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainColorText: #e2d599;
+}
+
+@font-face {
+  font-family: 'Amenti';
+  src: url('../src/assets/fonts/amentiRegular.ttf') format('truetype');
+  /* Otros estilos opcionales, como font-weight y font-style, pueden ir aquí */
+}
+@font-face {
+  font-family: 'tusker';
+  src: url('../src/assets/fonts/tusker-grotesk-3700-bold (1).ttf') format('truetype');
+  /* Otros estilos opcionales, como font-weight y font-style, pueden ir aquí */
+}
+
+body{
+  @apply w-screen h-screen p-0 m-0 amenti
+}
+p{
+  @apply colorTextoClaro tracking-[7px]
+}
+.amenti{
+  font-family: 'Amenti';
+}
+.colorTextoClaro{
+  color: var(--mainColorText);
+}
+
+.full_width{
+  @apply w-screen h-screen
+}
+.largo{
+  @apply h-[300vh] relative z-10
+}
+.cajaimagenes{
+  @apply sticky top-0 left-0
+}
+
+.imagen_9{
+  z-index: 1
+}
+.imagen_8{
+  z-index: 2
+}
+.imagen_7{
+  z-index: 3
+}
+.imagen_6{
+  z-index: 4
+}
+.imagen_5{
+  z-index: 5
+}
+.imagen_4{
+  z-index: 6
+}
+.imagen_3{
+  z-index: 7
+}
+.imagen_2{
+  z-index: 8
+}
+.imagen_1{
+  z-index: 9
+}
+.imagen_1, .imagen_2, .imagen_3, .imagen_4, .imagen_5, .imagen_6, .imagen_7, .imagen_8, .imagen_9 {
+  position: absolute;
+  top:0;
+  transition: all 0.5s ease
+}
+#textoUno, #textoDos, #textoTres, #textoCuatro, #textoCinco, #textoSeis, #textoSiete, #video{
+transition: all 1.5s ease;
+position: absolute;
+}
+.opacity{
+  opacity: 0;
+}
+/*--------------------------------------------------------PUNTOS---------------------------------------------------------------*/
+.full-screen-container {
+  position: relative;
+  height: 100vh;
+  background: url('./src/assets/imagenes/caja1.jpg') center/cover no-repeat;
+  overflow: hidden; /* Evita que el blur se propague fuera del contenedor */
+}
+
+.full-screen-container.blur {
+  filter: blur(5px);
+}
+
+.dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(94, 94, 243);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot:nth-child(2) {
+  /* Estilos para el segundo punto */
+  left: 30%;
+  top: 20%;
+}
+
+.dot:nth-child(3) {
+  /* Estilos para el tercer punto */
+  left: 60%;
+  top: 20%;
+}
+
+.dot:nth-child(4) {
+  /* Estilos para el cuarto punto */
+  left: 30%;
+  top: 70%;
+}
+
+.dot:nth-child(5) {
+  /* Estilos para el quinto punto */
+  left: 60%;
+  top: 70%;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(138, 137, 137, 0.452); /* Fondo semitransparente para el popup-container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  width: 50%;
+  background: black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+/*------------------video-------------------------*/
+.comercial{
+  background: url('./src/assets/imagenes/backvideo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @apply flex-col justify-center items-center p-[-10%] z-50 relative
+}
+.gradienteTransparente{
+  @apply bg-gradient-to-b from-transparent to-black;
+}
+.empujar{
+  @apply translate-y-20
+}
+/*-----------------------crousel------------------*/
+.slick-slide > div {
+  margin: 0 10px;
+}
+.bnovena{
+  background: url('./src/assets/imagenes/fondonovena.jpg');
+  @apply z-[70] relative full_width;
+}
+
+.borderBtn {
+  @apply border border-[--mainColorText] py-2 px-8; 
+}
+.custonBtn {
+  @apply transition hover:bg-[--mainColorText] text-white borderBtn hover:text-black;
+}

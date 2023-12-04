@@ -1,0 +1,42 @@
+
+{
+    "imag": [
+      {
+        "src": "ruta/a/imagen1.jpg",
+        "alt": "Descripción de la imagen 1",
+        "caption": "Título de la imagen 1"
+      },
+      {
+        "src": "ruta/a/imagen2.jpg",
+        "alt": "Descripción de la imagen 2",
+        "caption": "Título de la imagen 2"
+      },
+      {
+        "src": "ruta/a/imagen2.jpg",
+        "alt": "Descripción de la imagen 3",
+        "caption": "Título de la imagen 3"
+      },
+      {
+        "src": "ruta/a/imagen2.jpg",
+        "alt": "Descripción de la imagen 4",
+        "caption": "Título de la imagen 4"
+      },
+      {
+        "src": "ruta/a/imagen2.jpg",
+        "alt": "Descripción de la imagen 5",
+        "caption": "Título de la imagen 5"
+      },
+      {
+        "src": "ruta/a/imagen2.jpg",
+        "alt": "Descripción de la imagen 5",
+        "caption": "Título de la imagen 5"
+      },
+      {
+        "src": "ruta/a/imagen2.jpg",
+        "alt": "Descripción de la imagen 6",
+        "caption": "Título de la imagen 6"
+      }
+      
+    ]
+  }
+  
